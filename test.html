@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:400px;font-weight:bold" id="mySidebar"><br>
+    <img src="picweb.JPG" style="width: 50%;border-radius: 50%;">
+  <h2 style="margin-top: auto;margin-bottom: auto;" class="w3-center"><b>Hi, I'm Derek Taylor.</b></h2>
+  <h4 class= w3-center"><b>Data visualization and GIS specialist.<br> Discovering the world, one map at at time.</h4></b>
+<p style="text-align: justify;padding-left: 10px;padding-right: 10px;"> I've worked the past five years as a GIS data analyst uncovering stories from big datasets to provide clear and consise information to municipalities, stakeholders, and non-profits. I'm most interested in the <span style="color: black;">intersection of data and journalism</span>, utilizing dynamic and interactive visualizations to bring static excel sheets and text alive. Please scroll through my work and feel free to reach out with any questions. Thank you!   </p>
+
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">Derek Taylor's Portfolio</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:400px">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  
+  <!-- Photo grid -->
+  <div class="w3-row-padding">
+    <h1><b><center>Work Portfolio</center></b></h1>
+  </div>
+  <div class="w3-row-padding" id='row1'>
+    <div  class="w3-half">
+      
+    
+      
+ 
+    <a href='https://dktaylor916.github.io/US-police-protest-violence/' ><h3><b><center>Police Violence at US Protests</center></b></h3></a>
+    <p style="font-size:1vw;"><b>Tools: </b>Javascript, Python, QGIS, Postgres, PostGIS
+    <br>
+    <b>Summary: </b>Over the summer Bellingcat, with the support of the open source community, collected a database of 475 cases of police violence against protesters. The protests sparked by the killing of George Floyd in Minneapolis, have since spread throughout the entire country. This dataset helps paint a full picture of events that we have classified as an unjustified use of force by the police taking place between May 27th and July 12. This interactive data story is meant to help explore different patterns with the types of violations and offer a deeper look into the this summer of police violence.</p>
+
+  </div>
+    <div  class="w3-half">
+      <a>
+      <video id=police style="cursor:pointer ;width: 100%;border: 1px solid black;"  loop src="police1.mov" onclick="window.open('https://dktaylor916.github.io/US-police-protest-violence/')">
+      </a>
+    </div>
+  
+  </div>
+  <div class="w3-row-padding" id="row2">
+
+    <div class="w3-half">
+      <a href='https://dktaylor916.github.io/marketstreetfinal/'><h3><b><center>A Brief Walk Through the History of Market Street</center></b></h3></a>
+    <p style="font-size:1w;"><b>Tools: </b>Javascript, MapBox, QGIS
+    <br>
+    <b>Summary: </b>Market Street has historically served as one of the major thoroughfares in San Francisco. Since 2011 the city has invested heavily in a 'Better Market Street' plan, including car free zones and pedestrian friendly design. This data story walks through a brief histroy of Market Street, explores the motivation for a change, and takes a look into whats to come. </p>
+    </div>
+    <div  class="w3-half">
+      
+      <video id=market style="cursor:pointer ;width: 100%;border: 1px solid black;"  loop src="market1.mov" onclick="window.open('https://dktaylor916.github.io/marketstreetfinal/')">
+       
+    </div>
+   </div> 
+
+
+    <div class="w3-row-padding" id="row3" style='height:50%'>
+
+      <div class="w3-half">
+        <a href='https://dktaylor916.github.io/marketstreetfinal/'><h3><b><center>How California Slowed Down</center></b></h3></a>
+      <p style="font-size:1vw;"><b>Tools: </b>Python, QGIS
+      <br>
+      <b>Summary: </b>Since the onset of COVID-19, transportation patterns throughout the world have radically shifted. Flights sit empty, once heavily congested corridors now see record lows in traffic, and public transit is used sparingly. Continuing the movement of people and communities will require creative solutions to keep traffic flowing once the shelter in place orders cease. <br> This data visualization highlights the change in vehicle miles traveled from March - May 2020.
+    </p>
+      </div>
+      <div  class="w3-half">
+        
+        <video id=ca style="cursor:pointer ;width: 100%;border: 1px solid black;"  loop src="ca_vmt.mp4" onclick="window.open('https://dktaylor916.github.io/datavizblog/')">
+         
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>About Me</b></h4>
+    <img src="/w3images/avatar_hat.jpg" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>My Name</h4>
+      <p>Some text about me. I love taking photos of PEOPLE. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <p>mail: example@example.com</p>
+      <p>tel: 5353 35531</p>
+      <hr class="w3-opacity">
+      <h4 class="w3-padding-16">Technical Skills</h4>
+      <p class="w3-wide">Photography</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:95%">95%</div>
+      </div>
+      <p class="w3-wide">Web Design</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide">Photoshop</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
+      </div>
+      <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom">Download Resume</button></p>
+      <hr class="w3-opacity">
+
+     
+      
+        <div class="w3-half">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+         
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact section -->
+
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">  
+    <div class="w3-row-padding">
+      <div class="w3-third">
+          
+      </div>
+    
+      <div class="w3-third">
+       
+        
+          </li> 
+        </ul>
+      </div>
+
+      <div class="w3-third">
+       
+      </div>
+    </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24"><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity"></a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+$(document).ready(function() {
+  $("#row1").on("mouseover", function(event) {
+   document.querySelector('#police').play();
+
+  }).on('mouseout', function(event) {
+    document.querySelector('#police').pause();
+
+  })
+  
+})
+$(document).ready(function() {
+  $("#row2").on("mouseover", function(event) {
+    document.querySelector('#market').play();
+
+  }).on('mouseout', function(event) {
+    document.querySelector('#market').pause();
+
+  })
+  
+})
+$(document).ready(function() {
+  $("#row3").on("mouseover", function(event) {
+    document.querySelector('#ca').play();
+
+  }).on('mouseout', function(event) {
+    document.querySelector('#ca').pause();
+
+  })
+  
+})
+
+
+</script>
+
+
+</body>
+</html>
