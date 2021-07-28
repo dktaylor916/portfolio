@@ -31,7 +31,15 @@ hr.style-eight {
     text-align: center;
     position: center;
 }
-
+hr.style-eight:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.9em;
+    font-size: 1em;
+    padding: 0 0.25em;
+    background: transparent;
+}
 p{font-family: 'Montserrat', sans-serif;}
 .w3-button{font-family: 'Staatliches', sans-serif;font-size: 20px;font-weight: 400;line-height: normal;}
 h2{font-family: 'Staatliches', sans-serif;font-size: 45px;}
@@ -134,7 +142,7 @@ h5{font-family: 'Staatliches', sans-serif;font-size: 45px;}
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
   <a href="#" onclick="w3_close()" class="w3-bar-item w3-button"style="background-color:rgba(0, 0, 0, 0.0);color:white">PORTFOLIO</a> 
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"style="background-color:rgba(0, 0, 0, 0.0);color:white">ABOUT ME</a> 
-  <a href="#resume" onclick="w3_close()" class="w3-bar-item w3-button"style="background-color:rgba(0, 0, 0, 0.0);color:white">RESUME</a>
+  <a href="#resume" onclick="window.open('DerekTaylorResume.pdf')" class="w3-bar-item w3-button"style="background-color:rgba(0, 0, 0, 0.0);color:white">DOWNLOAD CV</a>
 </nav>
 
 <!-- Top menu on small screens -->
@@ -175,7 +183,7 @@ h5{font-family: 'Staatliches', sans-serif;font-size: 45px;}
      <video id=fiets class="image"  muted loop src="fietsaccess.mov">
      </video>
      <div class='overlay' id=fiets onclick="window.open('https://dktaylor916.github.io/webiso/')"><div class='overlay1'>Accessibility of Bike Networks in Amsterdam
-      <p style="font-size:1.5vw;font-family:  "><b>Tools: </b>PostGis, PGRouting, PostgresSQL, QGIS, Javascript, D3, Mapbox</div>
+      <p style="font-size:1.5vw;"><b>Tools: </b>PostGis, PGRouting, PostgresSQL, QGIS, Javascript, D3, Mapbox</div>
      </div>
    </div>
    <br>
