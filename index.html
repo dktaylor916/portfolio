@@ -165,9 +165,9 @@ h5{font-family: 'Staatliches', sans-serif;font-size: 45px;}
  
   <div class="w3-row-padding" id='row1'>
     <div class="container"> 
-       <video id=police class="image"muted loop src="af_cli.mp4"style='border-box'>
+       <video id=africa class="image"muted loop src="af_cli.mp4"style='border-box'>
        </video>
-       <div id = police class='overlay'onclick="window.open('https://dktaylor916.github.io/climate_africa/')"><div class='overlay1' >Climate Change<br>Africa<br><p style="font-size:1.5vw;font-family:  'Montserrat', sans-serif;"><b>Tools: </b>QGIS, Blender, Javascript</div>
+       <div id = africa class='overlay'onclick="window.open('https://dktaylor916.github.io/climate_africa/')"><div class='overlay1' >Climate Change<br>Africa<br><p style="font-size:1.5vw;font-family:  'Montserrat', sans-serif;"><b>Tools: </b>QGIS, Blender, Javascript</div>
       </div>
      
      </div>
@@ -176,7 +176,7 @@ h5{font-family: 'Staatliches', sans-serif;font-size: 45px;}
      <br>
   
  <!-- SEPARATOR -->
-  <div class="w3-row-padding" id='row1'>
+  <div class="w3-row-padding" id='row2'>
    <div class="container"> 
       <video id=police class="image"muted loop src="police1.mp4"style='border-box'>
       </video>
@@ -190,7 +190,7 @@ h5{font-family: 'Staatliches', sans-serif;font-size: 45px;}
  
 <!-- SEPARATOR -->
 
-<div class="w3-row-padding" id='row2'>
+<div class="w3-row-padding" id='row3'>
   <div class="container"> 
      <video id=fiets class="image"  muted loop src="fietsaccess.mp4">
      </video>
@@ -204,7 +204,7 @@ h5{font-family: 'Staatliches', sans-serif;font-size: 45px;}
 
 <!-- SEPARATOR -->
 
-  <div class="w3-row-padding" id='row3'>
+  <div class="w3-row-padding" id='row4'>
     <div class="container"> 
        <video id=market class="image"  muted loop src="market1.mp4">
        </video>
@@ -219,7 +219,7 @@ h5{font-family: 'Staatliches', sans-serif;font-size: 45px;}
   
 <!-- SEPARATOR -->
 
-  <div class="w3-row-padding" id='row3'>
+  <div class="w3-row-padding" id='row5'>
     <div class="container"> 
        <video id=ruimte class="image"  muted loop src="ruimte.mp4">
        </video>
@@ -233,7 +233,7 @@ h5{font-family: 'Staatliches', sans-serif;font-size: 45px;}
   
 <!-- SEPARATOR -->
 
-   <div class="w3-row-padding" id='row4'>
+   <div class="w3-row-padding" id='row6'>
     <div class="container"> 
        <video id=ca class="image" muted loop src="ca_vmt.mp4">
        </video>
@@ -248,7 +248,7 @@ h5{font-family: 'Staatliches', sans-serif;font-size: 45px;}
    
 <!-- SEPARATOR -->
 
-<div class="w3-row-padding" id='row4'>
+<div class="w3-row-padding" id='row7'>
   <div class="container"> 
      <video id=maps class="image" muted loop src="maps.mp4">
      </video>
@@ -408,6 +408,7 @@ function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
   document.getElementById("myOverlay").style.display = "block";
 }
+
  
 function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
@@ -421,6 +422,16 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
+$(document).ready(function() {
+  $("#africa.overlay").on("mouseover", function(event) {
+   document.querySelector('#africa').play();
+
+  }).on('mouseout', function(event) {
+    document.querySelector('#africa').pause();
+
+  })
+  
+})
 $(document).ready(function() {
   $("#police.overlay").on("mouseover", function(event) {
    document.querySelector('#police').play();
