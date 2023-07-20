@@ -162,12 +162,11 @@ h5{font-family: 'Staatliches', sans-serif;font-size: 45px;}
   
   
   <!-- Photo grid -->
- 
-  <div class="w3-row-padding" id='row1'>
+   <div class="w3-row-padding" id='row1'>
     <div class="container"> 
        <video id=africa class="image"muted loop src="af_cli.mp4"style='border-box'>
        </video>
-       <div id = africa class='overlay'onclick="window.open('https://dktaylor916.github.io/climate_africa/')"><div class='overlay1' >Climate Change<br>Africa<br><p style="font-size:1.5vw;font-family:  'Montserrat', sans-serif;"><b>Tools: </b>QGIS, Blender, Javascript</div>
+       <div id = africa class='overlay'onclick="window.open('https://dktaylor916.github.io/tdf/')"><div class='overlay1' >Climate Change<br>Africa<br><p style="font-size:1.5vw;font-family:  'Montserrat', sans-serif;"><b>Tools: </b>QGIS, Blender, Javascript</div>
       </div>
      
      </div>
@@ -176,6 +175,42 @@ h5{font-family: 'Staatliches', sans-serif;font-size: 45px;}
      <br>
   
  <!-- SEPARATOR -->
+  <div class="w3-row-padding" id='row1'>
+    <div class="container"> 
+       <video id=tdf class="image"muted loop src="tdf.mp4"style='border-box'>
+       </video>
+       <div id = tdf class='overlay'onclick="window.open('https://dktaylor916.github.io/climate_africa/')"><div class='overlay1' >Tour De France<br>Stage 17<br><p style="font-size:1.5vw;font-family:  'Montserrat', sans-serif;"><b>Tools: </b>QGIS, MapBox, Javascript</div>
+      </div>
+     
+     </div>
+     <br>
+     <hr class="style-eight">
+     <br>
+   <!-- SEPARATOR -->
+   <div class="w3-row-padding" id='row1'>
+    <div class="container"> 
+       <video id=sl1 class="image"muted loop src="sl-anim.mp4"style='border-box'>
+       </video>
+       <div id = sl1 class='overlay'onclick="window.open('https://vimeo.com/842404323')"><div class='overlay1' >Surfline 2022<br>A Year in Review<br><p style="font-size:1.5vw;font-family:  'Montserrat', sans-serif;"><b>Tools: </b>QGIS, Python</div>
+      </div>
+     
+     </div>
+     <br>
+     <hr class="style-eight">
+     <br>
+ <!-- SEPARATOR -->
+ <div class="w3-row-padding" id='row1'>
+  <div class="container"> 
+     <video id=sl2 class="image"muted loop src="sl-anim-app.mp4"style='border-box'>
+     </video>
+     <div id = sl2 class='overlay'onclick="window.open('https://dktaylor916.github.io/sl-app/')"><div class='overlay1' >Surfline <br>How do tides affect our surf?<br><p style="font-size:1.5vw;font-family:  'Montserrat', sans-serif;"><b>Tools: </b>QGIS, Python, Javascript, Mapbox</div>
+    </div>
+   
+   </div>
+   <br>
+   <hr class="style-eight">
+   <br>
+<!-- SEPARATOR -->
   <div class="w3-row-padding" id='row2'>
    <div class="container"> 
       <video id=police class="image"muted loop src="police1.mp4"style='border-box'>
@@ -310,7 +345,7 @@ h5{font-family: 'Staatliches', sans-serif;font-size: 45px;}
     <h4><b>About Me</b></h4>
     
     <div class="w3-content w3-justify" style="max-width:600px">
-      <p>I'm a California native currently living and working in London. Since graduating from UC Berkeley with a degree in City Planning and GIS, I've worked for the last five years as a Data Scientist & GIS Specialist. Recently, I moved to London to begin work as a data journalist. 
+      <p>I'm a California native currently living and working in London. Since graduating from UC Berkeley with a degree in City Planning and GIS, I've worked for the last five years as a Data Scientist & GIS Specialist. 
       <br><br>
       When I'm not making maps for work, I'm making maps for side projects, conducting my own open source investigations and exploring the world through numbers and visualizations. I have worked to uncover stories from big datasets to provide clear and consise information to municipalities, stakeholders, and non-profits. I'm most interested in the <span style="font-weight: 800;">intersection of data and journalism</span>, utilizing dynamic and interactive visualizations to bring static excel sheets and text alive. <br><br>
      After I close the computer for the day, you can find me biking into headwinds, playing drums, and jumping into cold bodies of water.
@@ -422,6 +457,33 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
+$(document).ready(function() {
+  $("#sl1.overlay").on("mouseover", function(event) {
+   document.querySelector('#sl1').play();
+
+  }).on('mouseout', function(event) {
+    document.querySelector('#sl1').pause();
+
+  })})
+  $(document).ready(function() {
+  $("#sl2.overlay").on("mouseover", function(event) {
+   document.querySelector('#sl2').play();
+
+  }).on('mouseout', function(event) {
+    document.querySelector('#sl2').pause();
+
+  })})
+ 
+$(document).ready(function() {
+  $("#tdf.overlay").on("mouseover", function(event) {
+   document.querySelector('#tdf').play();
+
+  }).on('mouseout', function(event) {
+    document.querySelector('#tdf').pause();
+
+  })
+  
+})
 $(document).ready(function() {
   $("#africa.overlay").on("mouseover", function(event) {
    document.querySelector('#africa').play();
