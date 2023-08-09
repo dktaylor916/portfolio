@@ -265,6 +265,19 @@ h5{font-family: 'Staatliches', sans-serif;font-size: 45px;}
      <br>
      <hr class="style-eight">
      <br>
+     <!-- SEPARATOR -->
+
+  <div class="w3-row-padding" id='row8'>
+    <div class="container"> 
+       <video id=liv class="image"  muted loop src="liv.mp4">
+       </video>
+       <div class='overlay' id=liv onclick="window.open('https://dktaylor916.github.io/bt_challenge/')"><div class='overlay1'>Liverpool Footfall
+        <p style="font-size:1.5vw;"><b>Tools: </b>QGIS, Python, Javascript, MapBox</div>
+       </div>
+     </div>
+     <br>
+     <hr class="style-eight">
+     <br>
   
 <!-- SEPARATOR -->
 
@@ -463,7 +476,13 @@ $(document).ready(function() {
 
   }).on('mouseout', function(event) {
     document.querySelector('#sl1').pause();
+  })})
+  $(document).ready(function() {
+  $("#liv.overlay").on("mouseover", function(event) {
+   document.querySelector('#liv').play();
 
+  }).on('mouseout', function(event) {
+    document.querySelector('#liv').pause();
   })})
   $(document).ready(function() {
   $("#sl2.overlay").on("mouseover", function(event) {
