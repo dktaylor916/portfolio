@@ -162,7 +162,20 @@ h5{font-family: 'Staatliches', sans-serif;font-size: 45px;}
   
   
   <!-- Photo grid -->
+  <div class="w3-row-padding" id='row1'>
+    
+    <div class="container"> 
+       <video id=climatezones class="image"muted loop src="climate-zones.mov"style='border-box'>
+       </video>
+       <div id = climatezones class='overlay'onclick="window.open('https://pudding.cool/2024/06/climate-zones/')"><div class='overlay1' >Climate Zones<br><p style="font-size:1.5vw;font-family:  'Montserrat', sans-serif;"><b>Tools: </b>Svelte, D3, Mapbox, Python</div>
+      </div>
+     
+     </div>
+     <br>
+     <hr class="style-eight">
+     <br>
    <div class="w3-row-padding" id='row1'>
+    
     <div class="container"> 
        <video id=africa class="image"muted loop src="af_cli.mp4"style='border-box'>
        </video>
@@ -509,6 +522,16 @@ $(document).ready(function() {
 
   }).on('mouseout', function(event) {
     document.querySelector('#africa').pause();
+
+  })
+  
+})
+$(document).ready(function() {
+  $("#climatezones.overlay").on("mouseover", function(event) {
+   document.querySelector('#climatezones').play();
+
+  }).on('mouseout', function(event) {
+    document.querySelector('#climatezones').pause();
 
   })
   
