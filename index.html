@@ -163,7 +163,14 @@ h5{font-family: 'Staatliches', sans-serif;font-size: 45px;}
   
   <!-- Photo grid -->
   <div class="w3-row-padding" id='row1'>
+    <div class="container"> 
+      <video id=railinsights class="image"muted loop src="railinsights.mp4"style='border-box'>
+      </video>
+      <div id = railinsights class='overlay'onclick="window.open('https://www.rail-insights.co.uk/')"><div class='overlay1' >Rail Insights<br><p style="font-size:1.5vw;font-family:  'Montserrat', sans-serif;"><b>Tools: </b>Svelte, MongoDB, MapboxGL, Python</div>
+     </div>
     
+    </div>
+    <br>
     <div class="container"> 
        <video id=climatezones class="image"muted loop src="climate-zones.mov"style='border-box'>
        </video>
@@ -543,6 +550,16 @@ $(document).ready(function() {
 
   }).on('mouseout', function(event) {
     document.querySelector('#climatezones').pause();
+
+  })
+  
+})
+$(document).ready(function() {
+  $("#railinsights.overlay").on("mouseover", function(event) {
+   document.querySelector('#railinsights').play();
+
+  }).on('mouseout', function(event) {
+    document.querySelector('#railinsights').pause();
 
   })
   
